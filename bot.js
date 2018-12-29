@@ -24,8 +24,8 @@ client.on('guildCreate', (guild) => {
 client.on('message', (message) => {
     if (message.channel.type !== 'text') return;
     if (message.member.hasPermission('MANAGE_GUILD') || message.member.hasPermission('ADMINISTRATOR') || message.member.id === message.guild.owner.id) {
-        if (message.content === '::stop') {stop.push(message.guild.id); return message.channel.send('Success');}
-        if (message.content === '::start') {stop.splice(stop.indexOf(message.guild.id),1); return message.channel.send('Success');}
+        if (message.content === '::stop') {stop.push(message.guild.id); return message.channel.send('Terminated bot services.');}
+        if (message.content === '::start') {stop.splice(stop.indexOf(message.guild.id),1); return message.channel.send('Initalized bot services.');}
     }
 })
 client.login(process.env.TOKEN);
