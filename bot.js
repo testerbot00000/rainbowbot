@@ -15,6 +15,8 @@ async function color () {
     }, 7000).then(color);
 }
 client.on('ready', () => {
+  client.user.setStatus("online")
+  client.user.setGame('https://www.patreon.com/LegacyYT');
     color();
 });
 client.on('guildCreate', (guild) => {
