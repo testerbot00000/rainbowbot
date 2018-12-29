@@ -1,1 +1,1 @@
-# rainbowbot
+# rainbow-role-bot
