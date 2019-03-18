@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const forEachTimeout = require('foreach-timeout');
 const client = new Discord.Client();
-const colors = ["F5FEFA","E3FDF0","D0FCE6","BEFBDD","ABFAD3","99F9C9","86F7BF","74F6B6","61F5AC","4FF4A2","3DF298","2AF28E","18F185"];
+const colors = ["00FF00","00FF1A","00FF35","00FF50","00FF6B","00FF86","00FFA1","00FFBB","00FFD6","00FFF1","00F1FF","00D6FF","00BBFF","00A1FF","0086FF","006BFF","0050FF","0035FF","001AFF","0000FF","1A00FF","3500FF","5000FF","6B00FF","8600FF","A100FF","BB00FF","D600FF","F100FF","FF00F1","FF00D6","FF00BB","FF00A1","FF0086","FF006B","FF0050","FF0035","FF001A","FF0000","FF1A00","FF3500","FF5000","FF6B00","FF8600","FFA100","FFBB00","FFD600","FFF100","F1FF00","D6FF00","BBFF00","A1FF00","86FF00","6BFF00","50FF00","35FF00","1AFF00"];
 const stop = [];
 async function color () {
     forEachTimeout(colors, (color) => {
